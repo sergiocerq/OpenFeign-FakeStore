@@ -16,4 +16,7 @@ public interface FakeStoreClient {
   @GetMapping("products")
   List<Product> getProducts();
 
+  @GetMapping("/users/{id}")
+  User getUser(@PathVariable("id") Integer id);
+
 }
